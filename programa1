@@ -1,3 +1,8 @@
+/* java.lang: essenciais como Strings, System e operações matemáticas (Math); 
+java.util: estruturas mais complexas como ArrayList, HashMap e Date; 
+java.io: entrada e saída de dados como File, InputStream e OutputStream;
+java.nio: recursos avançados de entrada e saída de dados, como buffers.
+
 public class helloworld {
     public static void main(){
         System.out.println("Hello, world");
