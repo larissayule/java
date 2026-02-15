@@ -1,0 +1,71 @@
+/* java.lang: essenciais como Strings, System e operações matemáticas (Math); 
+java.util: estruturas mais complexas como ArrayList, HashMap e Date; 
+java.io: entrada e saída de dados como File, InputStream e OutputStream;
+java.nio: recursos avançados de entrada e saída de dados, como buffers.*/
+
+public class helloworld {
+    public static void main(){
+        System.out.println("Hello, world");
+    }
+}
+
+
+// Programa 1:
+
+class Testar{
+    public static void main (String entrada [1])(
+        System.out.println("Começamos!");
+    )
+}
+
+
+// Programa 2: algoritmo que que receba 100 valores numéricos inteiros e mostre a soma desses 100 números.
+
+import javax.swing.*;
+class Somar {
+    public static void main (String args []){
+        int VetSoma [], i, soma = 0;
+        VetSoma = new int [100]; // Aloca 100 pontos de memória.
+
+        for (i = 0; i<=99; i++){
+            VetSoma[i] = Integer.parseInt(JOptionPane.showInputDialog("Digite um número inteiro")); // O Java sempre recebe em string, por isso é necessário o parseInt.
+            soma = soma + VetSoma[i];
+        }
+        System.out.println ("A soma dos 100 valores digitados é:" + soma);
+        System.exit(0); // Para liberar as memórias alocadas para o programa.
+    }
+}
+
+
+// Programa 3: algoritmo que recebe 120 valores numéricos inteiros, numa matriz 10x12 e mostra a soma desses 120 números.
+
+import javax.swing.*;
+class Somar {
+    public static void main (String args []) {
+        int MatSoma[][], a, b, soma = 0;
+        MatSoma = new int [10][12];
+
+        for (a=0; a<=9; a++){
+            for (b=0; b<=11; b++){
+                MatSoma[a][b] = Integer.parseInt(JOptionPane.showInputDialog("Digite um valor inteiro"));
+                soma = soma + MatSoma[a][b];
+        }
+    }
+        System.out.println ("A soma dos 120 valores digitados é:" + soma);
+        System.exit(0);    
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
