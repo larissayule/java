@@ -1,0 +1,37 @@
+/* Criar código Java -> compilar código Java -> 
+leitura do código Java (código gerado em .class, leitura feita pela JVM com base na JRE).
+Estrutura: pacotes (usa apenas letra minúscula, separa por ponto(.)), importação de pacotes, classe, variáveis, 
+método (funções internas das classes), comentários e documentação, imprimir.
+*/
+
+public class Estudo{ // Na classe
+  public static void main (String[] args[]){ // No método
+    System.out.println("Larissa");
+  }
+} 
+/* O public é onde define escopos. A classe (class) é um protótipo de quais recursos e funções 
+o objeto terá, o nome da classe convencionalmente tem a primeira letra maiúscula. 
+O public void é uma função que designa o tipo de retorno; o static torna a função estática 
+independentemente de instanciar-se ou não. No args o argumento que irá receber. 
+No System.out.println(), há o que querermos que o sistema exiba.*/
+
+public class Estudo{
+  public static void main (String[] args[]){
+    int idadeAluno;
+    idadeAluno = 5;
+    System.out.println(idadeAluno);
+  }
+} 
+
+/* Java Development Kit (JDK): Contém o JRE, bibliotecas, compiladores, depuradores, ferramentas.
+Java Runtime Environment (JRE): faz parte do JDK mas pode ser usado de forma independente
+para executar código de byte (java compilado). POde ser chamado como implementação da JVM.
+Java Virtual Machine (JVM): software que pode ser portado para plataformas de hardware. A JVM se torna
+uma instância do JRE no tempo de execução do programa Java. Os códigos de bytes são o idioma
+da máquina para a JVM.
+API (Application Programming Interface) Java: conjunto de classes escritas usando a linguagem Java que é
+executada na JVM. Essas classes auxiliam os devs fornecendo métodos padrão. */
+
+
+
+
