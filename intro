@@ -1,8 +1,14 @@
 /* Criar código Java -> compilar código Java -> 
 leitura do código Java (código gerado em .class, leitura feita pela JVM com base na JRE).
-Estrutura: pacotes (usa apenas letra minúscula, separa por ponto(.)), importação de pacotes, classe, variáveis, 
-método (funções internas das classes), comentários e documentação, imprimir.
-*/
+Estrutura: pacotes (usa apenas letra minúscula, separa por ponto(.)), importação de pacotes, classe (camelCase),
+variáveis, método (funções internas das classes), comentários e documentação, imprimir.
+Para constantes, usa-se letras maiúsculas com sublinhados como separadores.
+Há apenas uma classe pública por arquivo de código-fonte e, se houver uma classe pública 
+em um arquivo, o nome do arquivo deverá corresponder ao nome da classe pública. Por exemplo, 
+uma classe declarada como “public class Escola {}” 
+deve estar em um arquivo de código-fonte chamado Escola.java. Tipos primitivos em Java:
+inteiros (byte, short, int e long), números de ponto flutuante (precisão fracionária: float, 
+double), caracteres (char), booleanos (boolean).*/
 
 public class Estudo{ // Na classe
   public static void main (String[] args[]){ // No método
@@ -13,7 +19,8 @@ public class Estudo{ // Na classe
 o objeto terá, o nome da classe convencionalmente tem a primeira letra maiúscula. 
 O public void é uma função que designa o tipo de retorno; o static torna a função estática 
 independentemente de instanciar-se ou não. No args o argumento que irá receber. 
-No System.out.println(), há o que querermos que o sistema exiba.*/
+No System.out.println(), há o que querermos que o sistema exiba. System é o nome da classe de utilitários
+Java.*/
 
 public class Estudo{
   public static void main (String[] args[]){
