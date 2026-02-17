@@ -1,0 +1,18 @@
+/* Biblioteca: java.util.Stack (import.java.util.Stack)
+Quando usa a biblioteca, a pilha é um objeto.
+StackEmptyException verifica se a pilha está vazia. 
+Métodos: 
+push(): empilha um objeto
+pop(): desempilha
+peek(): pega o elemento do topo
+Criação de biblioteca de pilha: */
+
+public boolean PilhaVazia()
+public boolean PilhaCheia()
+public void Empilhar(<tipo> elemento)
+public <tipo> Desempilhar()
+public <tipo> ElementoTopo()
+public void MostrarPilha()
+
+
+
