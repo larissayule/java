@@ -12,10 +12,10 @@ public class helloworld {
 
 // Programa 1:
 
-class Testar{
-    public static void main (String entrada [1])(
+class Testar{ // O nome da classe precisa ser o nome do arquivo, com extensão .java
+    public static void main (String entrada [1]){
         System.out.println("Começamos!");
-    )
+    }
 }
 
 
