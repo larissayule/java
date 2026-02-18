@@ -88,6 +88,29 @@ public void MostrarPilha()
   }
 
 
+/* Desenvolva um algoritmo que recebe do usuário 5 números inteiros numa pilha com capacidade 
+para cinco números e mostra esses números (quando se cria uma classe, cria-se uma biblioteca;
+Pilha int tam é o construtor; de public boolean até public void são os métodos): */
+
+class Pilha
+  {
+    int tamanho;
+    int topo;
+    int vetor [];
+
+    Pilha (int tam)
+      {
+        topo = -1;
+        tamanho = tam;
+        vetor = new int [tam];
+      }
+public boolean PilhaVazia ()
+public boolean PilhaCheia ()
+public void Empilhar (int elemento)
+public void Desempilhar ()
+public void ElementoTopo ()
+public void MostrarPIlha ()
+  }
 
 
 
