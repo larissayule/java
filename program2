@@ -1,0 +1,13 @@
+// Programa 1:
+
+class Testar{ // O nome da classe precisa ser o nome do arquivo, com extensão .java
+    public static void main (String entrada [1]){
+        System.out.println("Começamos!");
+    }
+}
+
+/* Para rodar no cmd:
+1. Escreve cd\ após usuário, para acessar o diretório raiz. Exemplo: C:\Users\laris>cd\ 
+2. Uma vez no diretório, escreve javac, de Java Compiler, e o nome do arquivo (com extensão .java)
+3. Aparecerá um arquivo na extensão .class. Depois, digita novamente o nome do arquivo na 
+extensão .java, e o programa exibirá o System.out.println(). */ 
