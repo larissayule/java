@@ -1,0 +1,2 @@
+/* Biblioteca: Java.util.Queue. Métodos da biblioteca: add(obj), remove(), element(), peek().
+NoSuchElementException: verifica se já objeto na fila. */ 
