@@ -13,7 +13,8 @@ float tem menor precisão (32 bits). Java é uma linguagem fortemente tipada, o 
 Entre os tipos inteiros, `byte` (8 bits) e `short` (16 bits) são ideais para valores menores, enquanto `int` (32 bits) é o mais comum e `long` (64 bits) é usado para números muito grandes. 
 Para números com casas decimais, `float` (32 bits, precisão simples) e `double` (64 bits, precisão dupla) são as opções, sendo `double` geralmente preferido pela maior precisão. 
 O tipo `char` armazena um único caractere Unicode, e `boolean` representa valores lógicos `true` ou `false`. 
-Variáveis locais devem ser inicializadas antes do uso, enquanto variáveis de classe recebem valores padrão.*/
+Variáveis locais devem ser inicializadas antes do uso, enquanto variáveis de classe recebem valores padrão.
+USA-SE VOID PARA PROCEDIMENTOS. */
 
 public class Estudo{ // Na classe
   public static void main (String[] args[]){ // No método
