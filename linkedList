@@ -1,1 +1,51 @@
-// Na lista ligada se faz as ligações, em vez de ser junto como o vetor; estrutura de nó.
+/* Na lista ligada se faz as ligações, em vez de ser junto como o vetor; estrutura de nó. Os elementos são organizados na ordem dos endereços que ocupam na memória, e não de forma sequencial nela.
+Primeiro, faz-se a estrutura do nó. */
+
+public boolean ListaVazia (){
+  if (primeiro == null && ultimo == null)
+    {
+      return true;
+    }
+  else
+    {
+      return false;
+    }
+}
+
+public void Destruir (){ 
+// Após feito esse procedimento, o acesso ao primeiro elemento e ao último é destruído, mas continua na memória. O garbage collection de tempos em tempos faz essa varredura para remover essas listas.
+  primeiro = null;
+  ultimo = null;
+}
+
+public int ContarNos (){
+  int tamanho = 0;
+  No NoTemp = primeiro;
+
+  while (NoTemp != null){
+    tamanho = tamanho + 1;
+    NoTemp = NoTemp.prox;
+  }
+  return tamanho;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
