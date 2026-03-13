@@ -29,6 +29,92 @@ public int ContarNos (){
   return tamanho;
 }
 
+public void ElementoInicio()  
+  {
+    if (!ListaVazia())
+      {
+        System.out.println("O primeiro elemento é" + primeiro.elemento);
+      }
+    else
+      {
+        System.out.println("Lista Ligada Vazia");
+      }
+  }
+
+public void ElementoFinal()
+  {
+    if (!ListaVazia())
+      {
+        System.out.println("O último elemento é" + ultimo.elemento);
+      }
+    else
+      {
+        System.out.println("Lista Ligada Vazia");
+      }
+  }
+
+public void InserirInicio (no novoNo)
+  {
+    if (ListaVazia())
+    {
+      ultimo = novoNo;
+    }
+  else
+    {
+      novoNo.prox - primeiro;
+    }
+  primeiro = novoNo;
+  }
+
+public void InserirFinal (No novoNo)
+  {
+    if (ListaVazia())
+      {
+        primeiro = novoNo;
+      }
+    else
+      {
+        ultimo.prox = novoNo;
+      }
+    ultimo = novoNo;
+  }
+
+
+// O NoTemp é um nó auxiliar para percorrer a lista ligada. 
+
+public void InserirMeio (No NovoNo, int posicao){
+  No NoTemp = primeiro;
+  int NroNos, posAux = 1;
+
+  NroNos = ContarNos();
+  if (posicao <= 1){
+  InserirInicio(NovoNo);
+  }
+  else{
+    if (posicao > NroNos){
+      InserirFinal (NovoNo);
+    }
+    else{
+      while (posAux < (posicao - 1)){
+        NoTemp = NoTemp.prox;
+        posAux = posAux + 1;
+      }
+    NovoNo.prox = NoTemp.prox;
+    NoTemp.prox = NovoNo;
+    }
+  }
+}
+
+
+
+ver da 2 adiante
+
+
+
+
+
+
+
 
 
 
