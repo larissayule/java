@@ -119,6 +119,74 @@ public class Principal{
 }
 
 
+// O do while executa ao menos uma vez, o while pode não executar nenhuma vez, pode verifica antes se a condição é atendida. Loops:
+
+public class Principal{
+    public static void main (String[] args){
+        int numero = 1;
+        while (numero <= 5){
+            System.out.println (numero);
+            numero++;
+        }
+    }
+}
+
+public class Principal {
+    public static void main (String[] args){
+        int numero = 9;
+        do {
+            System.out.println (numero);
+            numero++;
+        }while (numero <= 5);
+    }
+}
+
+// Menu com do while:
+
+do{
+    System.out.println ("-----------");
+    System.out.println ("Menu Principal");
+    System.out.println ("-----------");
+    System.out.println ("Selecione uma das opções abaixo:");
+    System.out.println ("1 - Aluno");
+    System.out.println ("2 - Professor");
+    System.out.println ("3 - Coordenador");
+    System.out.println ("0 - Sair");
+
+    System.out.println ("Qual opção deseja?");
+    op = teclado.nextInt();
+
+    if (op == 0)    
+        break;
+
+    switch (op){
+    case 1:
+        System.out.println ("Você selecionou a opção de Aluno");
+        break;
+    case 2:
+        System.out.println ("Você selecionou a opção de Professor");
+        break;
+    case 3:
+        System.out.println ("Você selecionou a opção de Coordenador");
+        break;
+    default:
+        System.out.println ("Opção inválida!");
+    }
+
+    }while (true);
+
+System.out.println ("Fim");
+}
+
+public class Principal {
+    public static void main (String[] args){
+        for (int i=1; i<=5; i++){
+            System.out.println(i);
+        }
+    }
+}
+
+
 
 
 
