@@ -186,7 +186,23 @@ public class Principal {
     }
 }
 
+// Média de notas com for (geralmente usa-se o for quando sabemos o número de vezes, o while / do while quando não sabemos o número de vezes que o código será executado:
 
+public class Principal {
+    public static void main (String[] args){
+        double nota1, nota2, media;
+        Scanne input = new Scanner (System.in);
+
+        for (int na=1; na<=1000; na++) { // na seria número de aluno, o incremento é para a estrutura de repetição testar para vários alunos.
+        System.out.println ("Digite a nota 1:");
+        nota1 = input.nextDouble();
+        System.out.println ("Digite a nota 2:");
+        nota2 = input.nextDouble();
+        media = (nota1 + nota2)/2;
+        System.out.println ("Média:" + media);
+        }
+    }
+}
 
 
 
