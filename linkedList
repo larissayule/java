@@ -105,9 +105,109 @@ public void InserirMeio (No NovoNo, int posicao){
   }
 }
 
+public void Remover (int elemento) {
+  No Notemp = primeiro;
+  No NoAnt = null;
+
+  if (primeiro.elemento == elemento){
+    primeiro = primeiro.prox;
+    }
+  else{
+    while (NoTemp != null && NoTemp.elemento != elemento){
+      NoAnt = NoTemp;
+      NoTemp = NoTemp.prox;
+    }
+    if (NoTemp != null){
+        NoAnt.prox = NoTemp.prox;
+    }
+    if (NoTemp == ultimo){
+      ultimo = NoAnt;
+    }
+  }
+}
+
+public No BuscarNo (int elemento)
+  {
+    int i = 1;
+    No NoTemp = primeiro;
+
+    while (NoTemp != null)  
+      {
+        if (NoTemp.elemento == elemento)
+          {
+            System.out.println("No" + NoTemp.elemento + "posição" + i);
+            return NoTemp;
+          }
+        i = i + 1;
+        NoTemp = NoTemp.prox;
+      }
+    return null;
+  }
 
 
-ver da 2 adiante
+// Desenvolva um algoritmo que receba 10 números inteiros e armazena numa estrutura de lista ligada somente os números divisíveis por três. Mostre todos os elementos da lista ligada.
+
+public static void main (String arg[])
+  {
+    ListaLigada intLista = new ListaLigada ();
+    int i, num;
+
+    for (i = 1; i <=10; i++)
+      {
+        num = Integer.parseInt (JOptionPane.showInputDialog("Digite um número inteiro"));
+        if (num % 3 == 0)
+          {
+            intLista.InserirFinal(new No(num));
+          }
+      }
+    intLista.MostrarLista();
+    System.exit(0);
+  }
+}
+
+
+// Resumo:
+
+class No {
+  int elemento;
+  No prox;
+
+  No (int elem){
+    elemento = elem;
+    prox = null;
+  }
+}
+class ListaLigada{
+  No primeiro, ultimo;
+
+  ListaLigada ()
+    {
+      primeiro = null;
+      ultimo = null;
+    }
+public boolean ListaVazia ()
+...
+public void Destruir ()
+...
+public void InserirInicio (No novoNo)
+...
+public void InserirFinal (No novoNo)
+...
+public int ContarNos ();
+...
+public void InserirMeio (No NovoNo, int posicao)
+...
+public void Remover (int elemneto)
+...
+public void ElementoInicio ()
+...
+public void ElementoFinal ()
+...
+public No BuscarNo (int elemento)
+...
+public void MostrarLista ()
+...
+}
 
 
 
