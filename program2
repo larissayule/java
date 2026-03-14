@@ -1,4 +1,4 @@
-// Programa 1:
+// = atribui, == compara. Programa 1:
 
 class Testar{ // O nome da classe precisa ser o nome do arquivo, com extensão .java
     public static void main (String entrada [1]){
@@ -25,3 +25,121 @@ public class Funcionario {
 
     }
 }
+
+
+// Incremento e decremento:
+
+import java.util.Scanner;
+public class Principal {
+    public static void main (String[] args){
+
+        int num1, num2;
+        num1 = 6;
+        num2 = 6;
+
+        num1++; // num1 = num1 +1, SÓ QUE VINDO O INCREMENTO DEPOIS, ACONTECE PARA A PRÓXIMA INSTRUÇÃO.
+        ++num2; // num2 = num2 +1, SÓ QUE VINDO O INCREMENTO ANTES, ACONTECE PARA ESSA INSTRUÇÃO.
+
+        System.out.println(num1); //6
+        System.out.println(num2); //6
+
+        System.out.println(num1++); //6
+        System.out.println(++num2); //7
+    }
+}
+
+numero += 2; // numero = numero + 2. Poderia ser qualquer outra operação aritmética.
+
+// if else
+public class Principal {
+    public static void main (String[] args){
+        int valor = 8;
+        if (valor == 9){
+                System.out.println("Valor = 8");
+        }
+        else{
+            System.out.println("Valor diferente de 8");
+        }
+    }
+}
+
+// Programa para calcular média de notas:
+
+import java.util.Scanner;
+public class Principal {
+    public static void main (String[] args){
+       
+        Scanner input = new Scanner (System.in);
+        double nota1, nota2, nota3, media;
+       
+        System.out.println ("Digite o valor da nota 1:");
+        nota1 = input.nextDouble();
+
+        System.out.println ("Digite o valor da nota 2:");
+        nota2 = input.nextDouble();
+
+        System.out.println ("Digite o valor da nota 3:");
+        nota3 = input.nextDouble();
+
+        media = (nota1 + nota2 + nota3)/3;
+        System.out.println ("A média é igual a" + media);
+
+        if (media >= 7){
+            System.out.println ("Aprovado!");
+        }
+        else {
+            if(media <4){
+                System.out.println ("Reprovado");
+            }
+            else {
+                System.out.println ("Recuperação Final");
+            }
+        }
+    }
+}
+
+
+// Switch
+
+public class Principal{
+    public static void main (String[] args){
+
+        int numero = 1;
+
+        switch (numero){
+        case 1:
+            System.out.println ("Você digitou 1");
+            break;
+        case 2:
+            System.out.println ("Você digitou 2");
+        default:
+            System.out.println ("Você digitou um valor inválido");
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
