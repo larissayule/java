@@ -45,6 +45,37 @@ da máquina para a JVM.
 API (Application Programming Interface) Java: conjunto de classes escritas usando a linguagem Java que é
 executada na JVM. Essas classes auxiliam os devs fornecendo métodos padrão. */
 
+/* Em Java, String não é tipo primitivo, é importado da biblioteca Java.lang.
+equals é um método equivalente a ==; compara conteúdos.
+System.out.println (nome.length());
+System.out.println (nome.toLowerCase());
+System.out.println (nome.toUpperCase());
+System.out.println (nome.charAt(2));
+System.out.println (nome.isEmpty());
+System.out.println (nome.indexOf("al"));
+System.out.println (nome.contains("al"));
+System.out.println (nome.concat("Larissa"));
+System.out.println (nome.equals("Larissa Yule"));
+System.out.println (nome.equalsIgnoreCase("Larissa Yule"));
+*/
+
+String x = "oi ";
+System.out.println (x + “x”); // resultado é “oi x”
+System.out.println (x.trim () + “x”); // resultado é “oix”
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
