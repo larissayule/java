@@ -1,5 +1,11 @@
 /* Na lista ligada se faz as ligações, em vez de ser junto como o vetor; estrutura de nó. Os elementos são organizados na ordem dos endereços que ocupam na memória, e não de forma sequencial nela.
-Primeiro, faz-se a estrutura do nó. */
+Primeiro, faz-se a estrutura do nó.
+addFirst() ou offerFirst() - adiciona elementos no início da lista
+addLast() ou offerLast() ou add()
+getFirst() ou peekFirst() - obtém o primeiro elemento da lista
+getLast() ou peekLast()
+removeFirst() ou pollFirst() ou remove() - remove o primeiro elemento da lista
+removeLast() ou pollLast() */
 
 public boolean ListaVazia (){
   if (primeiro == null && ultimo == null)
@@ -210,7 +216,32 @@ public void MostrarLista ()
 }
 
 
+import java.util.LinkedList;
+public class Principal {
+  public static void main (String[] args){
+    List<String> listaNome = new LinkedList<>();
+    listaNome.add ("Larissa");
+    listaNome.add ("Rosa");
+    listaNome.add ("Gladston");
 
+    System.out.println("Antes");
+
+    for (String nome: listaNome){
+      System.out.println (nome);
+    }
+
+    listaNOme.set (1, "Neguinho");
+
+    System.out.println();
+    System.out.println();
+
+    System.out.println ("Depois");
+
+    for (String nome: listaNome){
+      System.out.println (nome);
+    }
+  }
+}
 
 
 
