@@ -1,0 +1,226 @@
+// Lembrete: recursão exige mais recursos computacionais.
+
+// BubbleSort: tempo de execução = amostra^2. Em Java:
+
+class BubbleSort
+{
+  public static int [] Bolha (int numeros [])
+{
+  final int n = numeros.lenght;
+  int aux;
+
+  for (int i=0; i < n-1; i++)
+    {
+    for (int j=0; j < n-1-i; j++)
+      {
+        if (numeros[j] > numeros[j+1])
+        {
+          aux = numeros[j];
+          numeros[j] = numeros[j+1];
+          numeros[j+1] = aux;
+         }
+       }
+      }
+  return numeros;
+}
+  public static void main (String entrada [])
+{
+  int i, vet[] = {9, 5, 1, 3, 10, 8, 4, 6, 7, 2};
+  vet = Bolha(vet);
+  for (i=0; i < 10; i++)
+  {
+    System.out.print (vet[i] + " ");
+  }
+  System.exit(0);
+}
+
+
+/* QuickSort: cria sublistas de partições a partir de um pivô, geralmente o primeiro 
+elemento da lista, ordena por recursão. Tempo de execução = nlog(n).*/
+
+class QuickSort
+{
+  public static void quicksort (int p, int q, int vetor[])
+{
+  int x;
+
+  if (p < q)
+    {
+      x = particao (p, q, vetor);
+      quicksort (p, x-1, vetor);
+      quicksort (x + 1, q, vetor);
+    }
+}
+
+  public static int particao (int p, int q, int vetor [])
+{
+    int j = p-1;
+    int temp, aux = vetor [q];
+
+    for (int i = p; i <= q; i++)
+    {
+      if (vetor [i] <= aux)
+      {
+        j++;
+        temp = vetor [i];
+        vetor [i] = vetor [j];
+        vetor [j] = temp;
+      }
+  }
+  return j;
+}
+
+  public static void main (String entrada [])
+{
+  int i, vet [] = {12, 5, -3, 4, 0, 21, 8, -7, 9, 6};
+  quicksort (0, 9, vet);
+  for (i=0; i < 10; i++)
+  {
+    System.out.print (vet [i] + " ");
+  }
+  System.exit(0);
+}
+
+// MergeSort: Ordenação por intercalação; ordenação por meio de elementos já ordenados. 
+Tempo de execução = nlog(n).
+
+public static void mergeSort (int[] a, int inicio, int fim)
+{
+  if (inicio == fim)
+    {
+      return;
+    }
+  int meio = (inicio + fim) / 2;
+  mergeSort (a, inicio, meio);
+  mergeSort (a, meio + 1, fim);
+  merge (a, inicio, meio, fim);
+}
+
+public static void merge (int[] a, int inicio, int meio, int fim)
+{
+    int n = fim - inicio + 1;
+    int [] b = new int [n];
+    int il = inicio, 12 = meio + 1, j = 0;
+
+    while (i1 <= meio && 12 <= fim){
+      if (a[i1] < a[i2]){
+          b[j] = a[i1];
+          i1++;
+      }
+      else{
+        b[j] = a[i2];
+        i2++;
+      }
+        j = j+1;
+  }
+    while (i1 <= meio){
+      b[j] = a[i1];
+      i1 = a1 + 1;
+      j = j + 1;
+  }
+    while (i2 <= fim){
+      b[j] = a [i2];
+      i2 = i2 + 1;
+      j = j + 1;
+  }
+    for (j = 0; j < n; j++){
+        a [inicio + j] = b [j];
+  }
+}
+
+public static void main (String entrada [])
+{
+  int i, vet[] = {0, 8, -4, 16, -12, 17, 13, -9, 2, 11};
+  mergeSort (vet, 0, 9);
+  for (i = 0; i<10; i++)
+  {
+    System.out.print (vet[i] + " ");
+  }
+  System.exit(0);
+}
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+public void emOrdem (No ABB){
+  if (ABB != null)
+  {
+    emOrdem (ABB.esquerda);
+    visita (ABB);
+    emOrdem (ABB.direita);
+  }
+}
+
+public void preOrdem (No ABB){
+  if (ABB != null)
+  {
+    visita (ABB);
+    preOrdem (ABB.esquerda);
+    preOrdem (ABB.direita);
+  }
+}
+
+public void posOrdem (No ABB){
+  if (ABB != null)
+  {
+    posOrdem (ABB.esquerda);
+    posOrdem (ABB.direita);
+    visita (ABB);
+  }
+}
+
+public static void main (String entrada []){
+  ArvoreBinaria ABB;
+  ABB = new ArvoreBinaria();
+  do{
+    op = menu();
+    vi = LerNum();  
+    switch (op){
+      case 1: emOrdem (ABB);
+              break;
+      case 2: preordem (ABB);
+              break;
+      case 3: posOrdem (ABB);
+              break;
+    }
+  } while (op<1 && op>3);
+    System.exit(0);
+}
+
+
+public static void visita (No ABB);
+{
+  System.out.println (ABB.num + " ");
+}
+
+public static int menu (){
+  String msg = " ";
+  int op;
+
+  msg = msg + "Digite 1 para Em Ordem\n";
+  msg = msg + "Digite 2 para Pré Ordem\n";
+  msg = msg + "Digite 3 para Pós Ordem\n";
+  msg = msg + "Digite 0 para sair do sistema \n";
+
+  op = Integer.parseInt (JOPtionPane.showInputDialog(msg));
+  return op;
+}
+
+
+
+
+
+
+
+
