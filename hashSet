@@ -1,0 +1,24 @@
+/* Modela o conjunto para que não haja elementos duplicados. Código de hash = índice usado para determinar um valor exclusivo.
+public boolean add (Object o) - Adiciona um objeto a um HashSet, se já não estiver presente no HashSet.
+public boolean remove (Object o) - Remove um objeto de um HashSet se encontrado no HashSet.
+public boolean contains (Objetc o) - Retorna true se o objeto encontrado retornar return false.
+public boolean isEmpty() - Retorna true se HashSet estiver vazio; caso contrário, retorna falso.
+public int size() - Retorna o número de elementos no HashSet.
+public boolean add (Object o) - Adiciona um objeto a um HashSet, se já não estiver presente no HashSet.
+NÃO LOCALIZA POR ÍNDICE, E SIM POR CÁLCULOS MATEMÁTICOS.*/
+
+import java.util.HashSet;
+
+public class Principal {
+  public static void main (String[] args){
+    
+    HashSet<String> listaNome = new HashSet<>();
+    listaNome.add("Larissa");
+    listaNome.add("Rosa");
+    listaNome.add("Gladston");
+
+    for (String nome: listaNome){
+      System.out.println(nome);
+    }
+  }
+}
