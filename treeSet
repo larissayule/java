@@ -1,0 +1,28 @@
+/* Usa uma árvore para armazenamento.
+void add (Object o) - adiciona elemento
+void clear() - remove todos os elementos do conjunto
+Object first() - retorna o primeiro elemento (mais baixo)
+Object last()
+boolean isEmpty() - retorna true se não contém elementos
+boolean remove (Object o) - remove o elemento especificado deste conjunto */
+
+import java.util.TreeSet;
+
+public class Principal {
+  public static void main (String[] args){
+    TreeSet<String> listaNome = new TreeSet<>();
+    listaNome.add("Larissa");
+    listaNome.add("Rosa");
+    listaNome.add("Gladston");
+
+    Iterator<String> iterator = listaNome.iterator();
+
+    while (iterator.hasNext()){
+      System.out.println (iterator.next());
+    }
+  }
+}
+
+
+
+
