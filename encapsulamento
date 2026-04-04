@@ -1,0 +1,6 @@
+/* É esconder detalhes internos de um objeto. Exemplo:
+Atributos privados: saldo: double; numeroConta: int.
+Métodos públicos: depositar (valor: double): void; sacar (valor: double): void; getSaldo(): double; getNumeroConta(): int.*/
+
+
+
