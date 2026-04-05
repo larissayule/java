@@ -1,0 +1,89 @@
+/* São estruturas de armazenamento chave-valor. 
+Map <String, String> mapa = new HashMap();
+Se a aplicação precisa manter duplicatas, recomenda-se lista.
+Se a aplicação não precisa manter duplicatas e não usa chaves, recomenda-se conjunto.
+Se sua aplicação não precisa manter duplicatas e usa chaves, recomenda-se mapa.
+Se precisar de uma lista: ArrayList se acessar por índice comum, LinkedList se inserir ou remover elementos do meio com frequência.
+Se precisar de um conjunto: HashSet se não precisa ser ordenado, TreeSet se precisa ser ordenado.
+Se precisar de um mapa: HashMap se não precisa de um mapa ordenado. TreeMap se precisa de um mapa ordenado.*/
+
+/*HashMap:
+new HashMap() - novo HashMap
+put() - insere item
+remove() - revove item
+keySet() - retorna todas as chaves
+values() - retorna todos os valores */
+
+import java.util.HashMap;
+
+public class Principal{
+  public static void main (String[] args){
+
+    HashMap <Integer, String> linguagensProgramacao = new HashMap<>();
+    linguagensProgramacao.put (1, "C++");
+    linguagensProgramacao.put (2, "Java");
+    linguagensProgramacao.put (3, "Cobol");
+    System.out.println ("Conteúdo do HashMap:" + linguagensProgramacao);
+
+    String valor = linguagensProgramacao.get(2);
+    System.out.println ("Elemento da chave 2:" + valor);
+  }
+}
+
+public class Principal{
+  public static void main (String[] args){
+
+    HashTable <Integer, String> linguagensProgramacao = new HashTable<>();
+    linguagensProgramacao.put (1, "C++");
+    linguagensProgramacao.put (2, "Java");
+    linguagensProgramacao.put (3, "Cobol");
+    System.out.println ("Conteúdo do HashTable:" + linguagensProgramacao);
+
+    String valor = linguagensProgramacao.get(2);
+    System.out.println ("Elemento da chave 2:" + valor);
+  }
+}
+
+/*LinkedHashMap estende o HashMap, por manutenção de lista.
+new LinkedHashMap() - novo LinkedHashMap
+put() - insere item
+remove() - remove item
+containsKey() - retorna chave
+containsValues() - retorna valores*/
+
+public class Principal{
+  public static void main (String[] args){
+
+    LinkedHashMap <String, String> listaNomes = new LinkedHashMap<>();
+    listaNomes.put ("Lari", "Larissa");
+    listaNomes.put ("Will", "William");
+    listaNomes.put ("Cocoiate", "Vitor");
+    System.out.println ("LinkedHashMap:" + listaNomes);
+
+    LinkedHashMap <String, String> novaListaNomes = new LinkedHashMap<> (listaNomes);
+    novaListaNomes ("Pipocat", "Pipoca");
+    System.out.println ("Nova LinkedHashMap:" + novaListaNomes);
+  }
+}
+
+/* TreeMap map que mantém as entradas em ordem crescente. 
+new TreeMap() - novo TreeMap
+put() - insere item
+remove() - remove item
+containsKey() - retorna chave
+containsValues() - retorna valores*/
+
+public class Principal{
+  public static void main (String[] args){
+
+    TreeMap <String, String> mapaNomes = new TreeMap<>();
+    listaNomes.put ("Lari", "Larissa");
+    listaNomes.put ("Will", "William");
+    listaNomes.put ("Cocoiate", "Vitor");
+    System.out.println ("TreeMap de Nomes:" + mapaaNomes);
+
+    System.out.println ("Chaves:" + mapasNomes.keySet());
+    System.out.println ("Valores:" + mapaNomes.values());
+    System.out.println ("Chave/valor:" + mapaNomes.entrySet());
+  }
+}
