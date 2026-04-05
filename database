@@ -1,0 +1,5 @@
+/* O modelo relacional representa dados em tabelas, a exemplo do MySQL. 
+O modelo não-relacional representa os dados em coleções de documentos JSON, CSV, MongoDB. 
+Java Database Connectivity (JDBC): API que centraliza e formaliza os comandos de comunicação com os bancos de dados,
+evitando assim que seja preciso fazer uma implementação diferente para cada banco. O JDBC exige um driver de comunicação do provedor do
+banco de dados.*/
